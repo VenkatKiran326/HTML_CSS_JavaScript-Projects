@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1716572786/Designer_aoafht.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100;
+}
+.p{
+    width: 400px;
+    height: 100%;
+    border: 2px solid black;
+    align-items: center;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    font-weight: bolder;
+    outline: none;
+    border: none;
+}
+h2{
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edeef0;
+    border-radius: 30px;
+    border-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+.add{
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1716559364/unchecked_ljn2wh.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1716559365/checked_uhfd0z.png");
+}
+
+span{
+    position: absolute;
+    right: 0;
+    top: 5px;  /* move the X to right side top on 5px */
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+span:hover{
+    background: #edeef0;
+}
