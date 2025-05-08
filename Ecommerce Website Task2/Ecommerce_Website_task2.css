@@ -101,7 +101,7 @@ button.white{
   margin: 15px;
   font-style: italic;
   position: relative ; /*we must add relaitve to performan action of li active*/     /*here li is parent tag for li a and li( other) */
- list-style: none;  /*remove  bullet points*/
+  list-style: none;  /*remove  bullet points*/
  padding: 0 10px;
 } 
 #r-navbar li a{
@@ -116,7 +116,7 @@ button.white{
   color: #088178;
 }
 #r-navbar li a.active::after,
-#r-navbar li a:hover::after{ /*useed fpr underline green*/
+#r-navbar li a:hover::after{ /*useed f0r underline green*/
   content: "";
   width: 30%;
   height: 2px;
@@ -163,7 +163,6 @@ button.white{
    
    /*Feature*/
    #feature .free-sh{
-    
     width: 180px;
     text-align: center;
     padding: 25px 15px;
@@ -273,7 +272,7 @@ button.white{
     border: 1px solid #cce7d0;
     right: 10px;
     bottom: 20px;
-    position: absolute;   /*here we must mention in parent class(#product1 .pro)  as well other wise it will give error */
+    position: absolute;   /*here we must mention in parent class(#product1 .pro)  as well otherwise it will give error */
    }
    
    #product1 .pro img{
@@ -495,6 +494,235 @@ footer .follow i:hover,
   text-align: center;
   justify-content: center;
 }
+
+
+/* Shop Page */
+#page-header{
+  background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1741241262/Ecommerce%20Website/fkpt9gonffzrwgvda3bj.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+}
+#page-header h2,p{
+  color: #212121;
+}
+#pagination{
+  text-align: center;
+}
+#pagination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600px;
+}
+/* Single Product */
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+
+}
+#prodetails .single-pro-image{
+  width: 40%;
+  margin-right: 50px;
+}
+/* Add this to your existing CSS */
+#MainImg {
+  width: 100% !important; /* Force width */
+  height: auto !important; /* Maintain aspect ratio */
+  max-width: 500px !important; /* Set a maximum width */
+  max-height: 600px !important; /* Set a maximum height */
+  object-fit: cover !important; /* Ensure the image covers the area without distortion */
+  border: 2px solid red; /* Debugging: Add a border to confirm the styles are applied */
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#prodetails .single-pro-details{
+  width: 50%;
+  padding-top:30px ;
+
+}
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+  font-size: 26px;
+}
+#prodetails .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+  outline: none;
+}
+#prodetails .single-pro-details button{
+  background-color: #088178;
+  color: #fff;
+}
+#prodetails .single-pro-details span{
+  line-height: 25px;
+
+}
+/* Blog Page */
+#page-header .blog-header{
+  background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1746448109/ztvsm2ftnuww7ogjvll7.jpg");
+
+}
+#blog{
+  padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 90px;
+}
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+#blog img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-details{
+  width: 50%;
+}
+#blog .blog-details a{
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+#blog .blog-details a::after{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+#blog .blog-details a:hover{
+  color: #088178;
+}
+#blog .blog-details a:hover::after{
+  background-color: #088178;
+}
+#blog .blog-box h1{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -10;
+}
+
+/* About Page */
+#page-header.about-header{
+  background-image: url("https://res.cloudinary.com/dwad4li0t/image/upload/v1746465886/ddcy0uxsbvcpusjxhqqe.png");
+}
+#about-head{
+  display: flex;
+  align-items: center;
+}
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+#about-head div{
+  padding-left: 40px;
+  line-height: 30px;
+}
+#about-app{
+  text-align: center;
+}
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+
+/* Contact Page */
+.message{
+  margin: 50px;
+  border: 1px solid #e1e1e1;
+  
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: none;
+  outline: none;
+}
+.input-h3{
+  padding-top: 5px;
+  margin-left: 20px;
+
+}
+.input input,textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+.input button{
+  width: 100px;
+  height: 50px;
+  padding: 15px;
+  background-color: #088178;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+iframe{
+  padding-left: 50px;
+  width: 50%;
+}
+
+
 /* 
 start media query toset ipad mode */
 @media (max-width:799px){
@@ -527,5 +755,151 @@ start media query toset ipad mode */
   font-size: 24px;
   padding-left: 20px;
 }
+#close{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #222;
+  font-size: 24px;
+}
 
+/* From here from video */
+#sm-banner .banner-box{
+  height: 40vh;
+}
+#sm-banner .banner-box2{
+  margin-top: 20px;
+}
+#banner3{
+  padding: 0 20px;
+}
+#banner3 .banner-box{
+  width: 100%;
+}
+#newsletter{
+  padding: 40px 20px;
+}
+#newsletter .form{
+  width: 100%;
+}
+footer .copyright{
+  text-align: start;
+}
+
+}
+
+/* FRom website */
+@media (max-width:477px){
+  .section-p1{
+    padding: 20px;
+  }
+  #header{
+    padding: 10px 30px;
+
+  }
+  h1{
+    font-size: 38px;
+  }
+  h2{
+    font-size: 32px;
+  }
+  #hero{
+    padding: 0 20px;
+  }
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+    }
+  #feature {
+    justify-content: space-between;
+    }
+  #product1 .pro {
+    width: 100%;
+    }
+  
+    #banner {
+      height: 40vh;
+    }
+  
+  #sm-banner .banner-box {
+    height: 40vh;
+    }
+  
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+    }
+  
+    #banner3 {
+      padding: 0 20px;
+    }
+  
+  #banner3 .banner-box {
+    width: 100%;
+    }
+  
+  #newsletter {
+    padding: 40px 20px;
+    }
+  
+  
+  #newsletter .form {
+    width: 100%;
+    }
+  
+  footer .copyright {
+    text-align: start;
+    background-position: 58%;
+    }
+    
+    /*Single Product*/
+  
+    #prodetails {
+      display: flex;
+      flex-direction: column;
+   }
+  
+   #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0;
+  }
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+  /* Blog page */
+  #blog{
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details{
+    width: 100%;
+  }
+  /* About Page */
+  #about-head{
+    flex-direction: column;
+  }
+  #about-head img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-head div{
+    padding-left: 0;
+  }
+  #about-app .video{
+    width: 100%;
+    margin: 30px auto o auto;
+  }
+  #feature {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
