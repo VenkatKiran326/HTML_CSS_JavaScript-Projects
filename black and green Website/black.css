@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(to right ,black,rgb(35, 35, 35));
+    height: 70vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-L{
+    text-align: left;
+    padding-top: 10px;
+    width: 5px;
+    height: 5px;
+}
+.nav-R{
+     display: flex;
+     flex-direction: row;
+    text-align: right;
+    color: aliceblue;
+}
+.element{
+    margin: 20px;
+    height: 20px;
+    color: rgb(145, 255, 0);
+}
+
+.element:hover {
+    background-color: rgb(183, 3, 84);
+  }
+.h-left{
+    width: 40vw;
+    color: aliceblue;
+    font-size: 60px;
+    filter: drop-shadow(10px 5px 10px green);
+    text-align: right;
+    padding-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 7px soild red;
+}
+.h-right{
+    width:60vw ;
+    text-align: center;
+    padding-top: 80px;
+
+}
+.hpage{
+    border: 7px soild red;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    
+}
+.coul{
+    text-align: center;
+}
+.box{
+    width: 320px;
+    height: 400px;
+    size: 40px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(to right ,black,rgb(24, 24, 24));
+    
+}
+.login{
+    
+    color: aliceblue;
+    font-size: 15px;
+}
+.a{
+    border-radius: 30px;
+    padding: 5px;
+}
+.b1{
+  color:chartreuse;
+ padding: 10px;
+
+
+}
+.contact{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20PX;
+    filter: drop-shadow(10px 5px 10px green);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right ,black,rgb(35, 35, 35));
+}
+.e1{
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    margin: 30px;
+    padding: 20px;
+}
+.e1 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,59 @@
+.container{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 20vh;
+}
+.container img{
+    width: 80px;
+    height: 80px;
+}
+.FOLLOW{
+  
+    font-size:15px;
+}
+.iconss{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    color: rgb(255, 255, 255);
+  
+}
+h1{
+    padding: 10px;
+}
+.ele{
+    width: 500px;
+}
+.fb{
+    
+    background: rgb(30, 165, 228);
+    border-radius: 30px;
+}
+.twi{
+   
+    background: rgb(4, 18, 24);
+    border-radius: 30px;
+}
+.insta{
+    
+    background-color: rgb(245, 8, 121);
+    border-radius: 30px;
+}
+.yt{
+    
+    background-color: rgb(236, 13, 13);
+    border-radius: 30px;
+
+}
+.ld{
+    
+    background-color: rgb(22, 104, 240);
+    border-radius: 30px;
+}
+.wts{
+   
+    background-color: rgb(41, 197, 66);
+    border-radius: 30px;
+
+}

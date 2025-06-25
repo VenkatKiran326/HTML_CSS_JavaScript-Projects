@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT Recall</title>
+    
+    
+<link rel="stylesheet" href="E commerce-2.css"><link rel="icon" type="x-icon" href="https://res.cloudinary.com/dwad4li0t/image/upload/v1714238521/ce9a3d27b2364e7da72937946cc336fa_lrnglk.jpg"></head>
+<body>
+    
+    <!--<h1>KIRAN </h1>-->
+    <div class="body section">
+        
+
+    <div class="nav-bar">
+        <div class="nav-left">
+            <h1>logo</h1>
+            <!-- <img src="LOGO" alt=""> -->
+        </div>
+        <div class="nav-right">
+        <a class="a-element">Home</a>
+        <a class="a-element">Profile</a>
+        <a class="a-element">Services</a>
+        <a class="a-element">Contact</a>
+        <a href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html" class="a-element" id="logout">Logout</a>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="left-menu">
+        <a class="b-element">Dashboard</a>
+        <a class="b-element">Revenue</a>
+        <a class="b-element">Sales</a>
+        <a class="b-element">Customers</a>
+        <a class="b-element">Reports</a>
+        <a class="b-element">Meetings</a>
+        <a class="b-element">Events</a>
+        <a class="b-element">Settings</a>
+    </div>
+
+     
+
+    <div class="m-menu">
+        <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Revenue</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Sales</a>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+        <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Customers</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    
+        <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Reports</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+        <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Meetings</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+        <div class="e1">
+        <a class="c-element" href="http://127.0.0.1:5500/HTML/projects/tillnowproject/tillNOWProject.html">Events</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <button id="b1">Submit </button>
+    <h1>Number of Views <span style="color: chartreuse;" id="views">0</span> </h1>
+    <button id="incre">Increment</button>
+    
+    <p id="fpara">The page footer is a section located under the main text of a printed page, typically used as the space for the page number</p>
+</footer>
+
+<!--  -->
+<script>
+
+   console.log("hello");
+
+    const button1 = document.getElementById("b1")
+    button1.addEventListener("click", function() {
+        alert(" Your Task Sumbited ✅");
+      });
+     const lout = document.getElementById("logout");
+     lout.addEventListener("click",function(){
+     alert("Succesfullly Logout");
+     });
+
+//++
+  
+     const v1=document.getElementById("views");
+     const increase=document.getElementById("incre")
+     let count=0;
+     increase.addEventListener("click",function(){
+        count++;
+        v1.innerHTML = count;
+     });
+//
+   
+     const para=document.getElementById("fpara");
+     para.innerHTML="The page footer is a section located under the main text of a printed page, typically used as the space for the page number"
+
+</script>
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
